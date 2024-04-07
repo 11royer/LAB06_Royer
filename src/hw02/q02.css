@@ -1,0 +1,65 @@
+/*
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  align-content: flex-start; 
+  width: 330px; 
+  height: 330px; 
+}
+/*
+.container-1, .container-2, .container-3,
+.container-4, .container-5, .container-6,
+.container-7, .container-8, .container-9 {
+  width: 100px; 
+  height: 100px; 
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container-1 { background-color: red; }
+.container-2 { background-color: blue; }
+.container-3 { background-color: red; }
+.container-4 { background-color: black; }
+.container-5 { background-color: orange; }
+.container-6 { background-color: brown; }
+.container-7 { background-color: green; }
+.container-8 { background-color: aqua; }
+.container-9 { background-color: aquamarine; }*/
+
+/*para la parte 5 realizamos los siguientes cambios*/
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start; 
+  width: 300px; 
+  height: 200px; 
+}
+
+/*tamaño de cada contenedor para que se ajuste en 3x2 */
+.container-1, .container-2, .container-3,
+.container-4, .container-5, .container-6,
+.container-7, .container-8, .container-9 {
+  width: 100px; 
+  height: 100px; 
+  color: white;
+  text-align: center;
+  line-height: 100px; 
+}
+
+/*bloques restantes encima de forma horizontal */
+.container-1 { order: 1; background-color: red; width: 300px; }
+.container-7 { order: 2; background-color: green; width: 300px; }
+.container-9 { order: 3; background-color: aquamarine; width: 300px; }
+
+
+/*los bloques en el orden deseado */
+.container-2 { order: 4; background-color: blue; }
+.container-3 { order: 5; background-color: lightseagreen; }
+.container-4 { order: 6; background-color: black; }
+.container-5 { order: 7; background-color: orange; }
+.container-6 { order: 8; background-color: brown; }
+.container-8 { order: 9; background-color: aqua; }
+
